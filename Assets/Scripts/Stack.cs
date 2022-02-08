@@ -46,8 +46,8 @@ public class Stack : MonoBehaviour
                 previousTile = currentTile;
                 currentTile = Instantiate(tilePrefab, previousTile.transform.position + new Vector3(0, stackFallDistance, 0), previousTile.transform.rotation);
 
-                Vector3 nScale = new Vector3(currentTile.transform.localScale.x + 0.2f, currentTile.transform.localScale.y + 0.2f, currentTile.transform.localScale.z + 0.2f);
-                currentTile.transform.DOPunchScale(nScale, 0.3f);
+                //Vector3 nScale = new Vector3(currentTile.transform.localScale.x + 0.2f, currentTile.transform.localScale.y + 0.2f, currentTile.transform.localScale.z + 0.2f);
+                //currentTile.transform.DOPunchScale(nScale, 0.3f);
 
                 stackObjects.Add(currentTile);
                 currentTile.transform.parent = playerParent.transform;
